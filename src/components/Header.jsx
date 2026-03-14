@@ -4,6 +4,9 @@ const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  // O número atualizado aqui:
+  const whatsappNumber = "5519994335140"; 
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -36,22 +39,23 @@ const Header = () => {
         
         <div className="flex items-center h-full">
           <a href="#inicio" className="flex items-center gap-2 md:gap-4 transition-transform active:scale-95">
+            {/* Imagens limpas sem filtros */}
             <img 
               src="/logo-branca.png" 
               alt="Logo Brunno & Rodrigues" 
-              className="h-8 md:h-16 w-auto object-contain brightness-0 invert" 
+              className="h-8 md:h-16 w-auto object-contain" 
             />
             <img 
               src="/bordao-brancoc.png" 
               alt="Bordão" 
-              className="h-7 md:h-14 w-auto object-contain brightness-0 invert opacity-90 transform -translate-y-[1px] md:-translate-y-[2px]" 
+              className="h-7 md:h-14 w-auto object-contain transform -translate-y-[1px] md:-translate-y-[2px]" 
             />
           </a>
         </div>
         
         <nav className="flex items-center h-full">
           <a 
-            href="https://wa.me/5519993171563" 
+            href={`https://wa.me/${whatsappNumber}`} 
             target="_blank" 
             rel="noreferrer"
             className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-white px-5 py-2 md:px-8 md:py-3 text-[10px] md:text-xs font-black text-black uppercase tracking-widest transition-all hover:bg-green-500 hover:text-white active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.1)]"

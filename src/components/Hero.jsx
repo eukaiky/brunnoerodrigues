@@ -4,12 +4,12 @@ const Hero = () => {
   return (
     <section id="inicio" className="relative w-full h-screen bg-[#050505] overflow-hidden flex items-end lg:items-center border-b border-white/5">
       
-      {/* 1. IMAGEM DE FUNDO */}
+      {/* 1. IMAGEM DE FUNDO - Com ajuste de 6px para a direita no mobile */}
       <div className="absolute inset-y-0 right-0 w-full lg:w-[65%] z-0">
         <img 
           src="/cantores.jpeg" 
           alt="Brunno & Rodrigues" 
-          className="w-full h-full object-cover object-[50%_15%] lg:object-[10%_15%] lg:translate-x-0 translate-x-[2px] opacity-100 lg:opacity-80 transition-all duration-700" 
+          className="w-full h-full object-cover object-[50%_15%] lg:object-[10%_15%] lg:translate-x-0 translate-x-[6px] opacity-100 lg:opacity-80 transition-all duration-700" 
         />
         
         {/* Contraste Mobile */}
@@ -44,8 +44,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* 3. SETA - Subida para bottom-20 no mobile */}
-      <a href="#contato" className="absolute bottom-20 lg:bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center opacity-30 hover:opacity-100 transition-opacity">
+      {/* 3. SETA - Subida para bottom-28 no mobile para não sufocar */}
+      <a href="#contato" className="absolute bottom-28 lg:bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center opacity-30 hover:opacity-100 transition-opacity">
         <div className="flex flex-col items-center -space-y-2 animate-bounce">
           <svg width="20" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2 2L12 10L22 2" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
