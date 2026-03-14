@@ -16,17 +16,16 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col items-center justify-center mt-60 md:mt-72 px-4 w-full text-center">
         <h1 className="sr-only">Brunno & Rodrigues</h1>
         
-        {/* Logo ainda maior no celular (w-64) */}
         <img 
           src="/logo-branca.png" 
           alt="Brunno & Rodrigues" 
-          className="w-64 sm:w-72 md:w-[320px] lg:w-[380px] h-auto drop-shadow-2xl"
+          className="w-72 sm:w-80 md:w-[320px] lg:w-[380px] h-auto drop-shadow-2xl"
           />
         
       </div>
 
-      {/* Seta ainda mais para cima no celular (bottom-20) */}
-      <a href="#redes" className="absolute bottom-20 md:bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 z-20 opacity-60 hover:opacity-100 transition-opacity">
+      {/* Alterado o href de #redes para #contato */}
+      <a href="#contato" className="absolute bottom-20 md:bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 z-20 opacity-60 hover:opacity-100 transition-opacity">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white animate-bounce">
           <path d="M12 5v14"></path>
           <polyline points="19 12 12 19 5 12"></polyline>

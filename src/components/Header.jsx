@@ -27,11 +27,10 @@ const Header = () => {
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      {/* Reduzi o padding nas laterais (px-3 md:px-6) para colar os itens mais nas bordas da tela */}
       <div className="w-full flex h-16 md:h-20 items-center justify-between px-3 md:px-6">
         
         <div className="flex items-center">
-          <a href="#inicio" className="flex items-center gap-3 md:gap-4 transition-transform active:scale-95">
+          <a href="#inicio" className="flex items-center gap-2 md:gap-4 transition-transform active:scale-95">
             {/* Logo principal */}
             <img 
               src="/logo-branca.png" 
@@ -39,11 +38,11 @@ const Header = () => {
               className="h-8 md:h-16 w-auto object-contain brightness-0 invert" 
             />
             
-            {/* Bordão com margem inferior para subir um pouquinho */}
+            {/* Bordão - Agora visível em todos os tamanhos (removido hidden sm:block) */}
             <img 
               src="/bordao-brancoc.png" 
               alt="Bordão" 
-              className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-90 hidden sm:block mb-1 md:mb-3" 
+              className="h-7 md:h-14 w-auto object-contain brightness-0 invert opacity-90 mb-1 md:mb-3" 
             />
           </a>
         </div>
@@ -51,7 +50,7 @@ const Header = () => {
         <nav>
           <a 
             href="#contato" 
-            className="rounded-full bg-white px-5 py-2 md:px-6 md:py-2.5 text-xs md:text-sm font-bold text-black uppercase tracking-tight hover:bg-gray-200 transition-colors"
+            className="rounded-full bg-white px-4 py-2 md:px-6 md:py-2.5 text-[10px] md:text-sm font-bold text-black uppercase tracking-tight hover:bg-gray-200 transition-colors"
           >
             Contrate-nos
           </a>

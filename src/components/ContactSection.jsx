@@ -19,7 +19,7 @@ const ContactSection = () => {
         </h2>
         
         <p className="text-gray-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-          Garanta a energia e o talento de Brunno & Rodrigues. Entre em contacto para orçamentos, datas e condições especiais.
+          Garanta a energia e o talento de Brunno & Rodrigues. Entre em contato para orçamentos, datas e condições especiais.
         </p>
 
         <a 
