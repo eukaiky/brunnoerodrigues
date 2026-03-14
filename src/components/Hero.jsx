@@ -13,7 +13,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-[#050505]"></div>
       </div>
 
-      {/* Subi a logo (mt-52) e aumentei o tamanho (w-80 / md:w-[350px]) */}
       <div className="relative z-10 flex flex-col items-center justify-center mt-52 md:mt-64 px-4 w-full text-center">
         <h1 className="sr-only">Brunno & Rodrigues</h1>
         
@@ -25,8 +24,8 @@ const Hero = () => {
         
       </div>
 
-      {/* Seta mais para cima (bottom-24) e maior (width/height 28) */}
-      <a href="#contato" className="absolute bottom-24 md:bottom-12 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 z-20 opacity-60 hover:opacity-100 transition-opacity">
+      {/* Seta ajustada: de bottom-24 para bottom-20 no mobile */}
+      <a href="#contato" className="absolute bottom-20 md:bottom-12 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 z-20 opacity-60 hover:opacity-100 transition-opacity">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white animate-bounce">
           <path d="M12 5v14"></path>
           <polyline points="19 12 12 19 5 12"></polyline>

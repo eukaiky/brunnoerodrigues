@@ -1,9 +1,10 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import AboutSection from './components/AboutSection'; // Novo import
+import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
 import SocialSection from './components/SocialSection';
+import PortfolioSection from './components/PortfolioSection'; // Novo import
 import Footer from './components/Footer';
 
 function App() {
@@ -12,9 +13,10 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <AboutSection /> {/* A história entra aqui */}
+        <AboutSection />
         <ContactSection />
         <SocialSection />
+        <PortfolioSection /> {/* <- Seção no final da página */}
       </main>
       <Footer />
     </div>
