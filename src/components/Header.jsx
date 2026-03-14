@@ -29,7 +29,7 @@ const Header = () => {
     >
       <div className="w-full flex h-16 md:h-20 items-center justify-between px-3 md:px-6">
         
-        <div className="flex items-center">
+        <div className="flex items-center h-full">
           <a href="#inicio" className="flex items-center gap-2 md:gap-4 transition-transform active:scale-95">
             {/* Logo principal */}
             <img 
@@ -38,19 +38,20 @@ const Header = () => {
               className="h-8 md:h-16 w-auto object-contain brightness-0 invert" 
             />
             
-            {/* Bordão - Agora visível em todos os tamanhos (removido hidden sm:block) */}
+            {/* Bordão - Centralizado verticalmente retirando as margens inferiores extras */}
             <img 
               src="/bordao-brancoc.png" 
               alt="Bordão" 
-              className="h-7 md:h-14 w-auto object-contain brightness-0 invert opacity-90 mb-1 md:mb-3" 
+              className="h-7 md:h-14 w-auto object-contain brightness-0 invert opacity-90" 
             />
           </a>
         </div>
         
-        <nav>
+        {/* Nav com h-full e flex items-center para garantir centralização vertical do botão */}
+        <nav className="flex items-center h-full">
           <a 
             href="#contato" 
-            className="rounded-full bg-white px-4 py-2 md:px-6 md:py-2.5 text-[10px] md:text-sm font-bold text-black uppercase tracking-tight hover:bg-gray-200 transition-colors"
+            className="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 md:px-6 md:py-2.5 text-[10px] md:text-sm font-bold text-black uppercase tracking-tight hover:bg-gray-200 transition-colors leading-none"
           >
             Contrate-nos
           </a>
