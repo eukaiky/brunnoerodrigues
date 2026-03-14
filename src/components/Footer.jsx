@@ -5,18 +5,19 @@ const Footer = () => {
     <footer className="bg-[#050505] py-12 border-t border-white/10">
       <div className="container mx-auto px-6 text-center flex flex-col items-center gap-6">
         
-        {/* Logo e Bordão alinhados com ajuste fino no bordão */}
+        {/* Logo e Bordão alinhados sem filtros */}
         <div className="flex items-center justify-center gap-4 md:gap-6">
           <img 
             src="/logo-branca.png" 
             alt="Brunno & Rodrigues" 
-            className="h-10 opacity-80 hover:opacity-100 transition-all duration-300 object-contain" 
+            /* Removido opacity-80 */
+            className="h-10 transition-all duration-300 object-contain" 
           />
           <img 
             src="/bordao-brancoc.png" 
             alt="Bordão" 
-            /* translate-y-[-2px] sobe o bordão milimetricamente */
-            className="h-8 opacity-70 hover:opacity-100 transition-all duration-300 object-contain transform translate-y-[-2px]" 
+            /* Removido opacity-70 e mantido apenas o ajuste de altura */
+            className="h-8 transition-all duration-300 object-contain transform translate-y-[-2px]" 
           />
         </div>
         
